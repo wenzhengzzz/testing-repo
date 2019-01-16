@@ -50,3 +50,11 @@ we feel that no one else has a right to blame us. ":leaves:
 - [x] Add useful reference resources
 - [x] Images and links
 - [x] Report
+
+## Plots
+```{r}
+library(ggplot2)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+

@@ -1,7 +1,7 @@
 First Markdown File
 ================
 Wenzheng Zhou
-14 January, 2019
+15 January, 2019
 
 Big Header
 ----------
@@ -51,3 +51,14 @@ To-Dos
 -   \[x\] Add useful reference resources
 -   \[x\] Images and links
 -   \[x\] Report
+
+Plots
+-----
+
+``` r
+library(ggplot2)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
+![](First_md_files/figure-markdown_github/unnamed-chunk-1-1.png)
